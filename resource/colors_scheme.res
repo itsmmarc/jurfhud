@@ -1,3 +1,4 @@
+#base ../customization/accentcolor.res
 Scheme
 {
 	//////////////////////// COLORS ///////////////////////////
@@ -19,7 +20,6 @@ Scheme
 		"Purple"				"173 151 227 255"
 		"PurpleDull"			"173 151 227 128"
 		"PurpleVeryDull"		"173 151 227 20"
-		"Accent"			    "35 125 235 255"
 		"SteamLightGreen"		"158 195 79 255"
 
         "Blank"                 "0 0 0 0"

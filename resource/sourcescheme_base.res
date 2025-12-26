@@ -1,3 +1,4 @@
+#base ../customization/accentcolor.res
 "Scheme"
 {
 	Colors

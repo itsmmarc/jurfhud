@@ -1,5 +1,4 @@
-
-
+#base ../customization/accentcolor.res
 
 ///////////////////////////////////////////////////////////
 // Tracker scheme resource file
@@ -32,8 +31,6 @@ Scheme
 		"PurpleVeryDull"		"173 151 227 20"
 		"Black"					"0 0 0 255"
 		"SteamLightGreen"		"158 195 79 255"
-
-        "Accent"                "35 125 235 255"
 
         "Blank"                 "0 0 0 0"
         "SS_Label"				"255 255 255 255"

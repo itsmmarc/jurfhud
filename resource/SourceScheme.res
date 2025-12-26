@@ -1,5 +1,5 @@
 //=========================================================
-// BASE JUMPHUD SOURCESCHEME
+// BASE SURFHUD SOURCESCHEME
 //=========================================================
 #base sourcescheme_base.res
 
