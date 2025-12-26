@@ -1,0 +1,8 @@
+r_decal_cullsize 1
+
+exec autoexec.cfg
+exec surfhud_setup.cfg
+
+stuffcmds
+startupmenu
+sv_unlockedchapters 99
