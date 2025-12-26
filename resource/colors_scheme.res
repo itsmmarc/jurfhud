@@ -17,10 +17,10 @@ Scheme
 		"Blank"				"0 0 0 0"
 		"Grey"					"100 100 100 100"
 		"LightGrey"				"60 60 60 60"
-		"Purple"				"173 151 227 255"
-		"PurpleDull"			"173 151 227 128"
-		"PurpleVeryDull"		"173 151 227 20"
 		"SteamLightGreen"		"158 195 79 255"
+
+        "CTColor"   "255 255 255 255"
+        "TColor"    "255 255 255 255"
 
         "Blank"                 "0 0 0 0"
 
@@ -40,13 +40,15 @@ Scheme
 	// controls use these to determine their settings
 	BaseSettings
 	{
-		Border.Bright						"Accent"				// top left border for team select
-		Border.Dark							"Accent"				// bottom right border for team select menu
+		Border.Bright						"Blank"				// top left border for team select
+		Border.Dark							"Blank"				// bottom right border for team select menu
 		
-		Button.TextColor					"Accent"				// team select text colour not hovering
-		Button.BgColor						"TransparentMediumBlack"					// team select background colour not hovering
+		Button.TextColor					"White"				// team select text colour not hovering
+		Button.BgColor						"Blank"					// team select background colour not hovering
 		Button.ArmedTextColor				"Accent"				// team select text colour hovering	
-		Button.ArmedBgColor					"TransparentBlack"					// team select background colour hovering
+		Button.ArmedBgColor					"Blank"					// team select background colour hovering
+        Button.DepressedTextColor			"Accent"
+		Button.DepressedBgColor				"Blank"
 
 		ComboBoxButton.ArrowColor			"Accent"				// spectator bar arrow
 		ComboBoxButton.ArmedArrowColor		"Accent"				// spectator bar arrow hover 
@@ -70,9 +72,9 @@ Scheme
 		Label.SelectedTextColor				"White"						// text describing the agent you pick
 
 		Menu.TextColor						"White"						// spectator bar menu text colour
-		Menu.BgColor						"TransparentMediumBlack"					// spectator bar menu background fill
-		Menu.ArmedTextColor					"White"						// spectator bar menu text colour hover
-		Menu.ArmedBgColor					"Accent"				// spectator bar menu background fill hover
+		Menu.BgColor						"Blank"					// spectator bar menu background fill
+		Menu.ArmedTextColor					"Accent"						// spectator bar menu text colour hover
+		Menu.ArmedBgColor					"Blank"				// spectator bar menu background fill hover
 		
 		Panel.BgColor						"Blank"						// some panel background fill( LEAVE BLANK )
 
@@ -82,17 +84,17 @@ Scheme
 		RichText.SelectedTextColor			"Accent"				// team select highlighted text 
 		RichText.SelectedBgColor			"TransparentMediumBlack"					// team select highlighted background 
 
-		ScrollBarButton.FgColor				"Accent"				// team select bar square arrow
-		ScrollBarButton.BgColor				"TransparentMediumBlack"					// team select bar square fill
+		ScrollBarButton.FgColor				"White"				// team select bar square arrow
+		ScrollBarButton.BgColor				"Blank"					// team select bar square fill
 		ScrollBarButton.ArmedFgColor		"Accent"				// team select bar square arrow hover
-		ScrollBarButton.ArmedBgColor		"TransparentBlack"					// team select bar square fill hover
-		ScrollBarButton.DepressedFgColor	"TransparentBlack"					// team select bar square arrow on click
-		ScrollBarButton.DepressedBgColor	"TransparentBlack"					// team select bar square fill on click
+		ScrollBarButton.ArmedBgColor		"Blank"					// team select bar square fill hover
+		ScrollBarButton.DepressedFgColor	"Accent"					// team select bar square arrow on click
+		ScrollBarButton.DepressedBgColor	"Blank"					// team select bar square fill on click
 		ScrollBarSlider.FgColor				"Accent"				// team select slider
-		ScrollBarSlider.BgColor				"TransparentMediumBlack"					// team select slider background 
+		ScrollBarSlider.BgColor				"Blank"					// team select slider background 
 
 		TextEntry.TextColor					"Accent"				// spectator bar menu text
-		TextEntry.BgColor					"TransparentMediumBlack"					// spectator bar menu fill
+		TextEntry.BgColor					"Blank"					// spectator bar menu fill
 		TextEntry.SelectedTextColor			"White"						// spectator bar menu text highlighted
 		TextEntry.SelectedBgColor			"Accent"				// spectator bar menu text background highlighted
 
@@ -122,9 +124,6 @@ Scheme
 	
 		Border.Selection					"Green"					// 
 		Border.BuyPreset					"Green"					// 
-		
-		Button.DepressedTextColor			"Green"	 				// 
-		Button.DepressedBgColor				"Green"					// 
 		
 		CheckButton.TextColor				"Green"					// 
 		CheckButton.SelectedTextColor		"Green"					// 

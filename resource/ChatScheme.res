@@ -26,9 +26,6 @@ Scheme
 		"Yellow"				"255 255 0 255"
 		"Grey"					"100 100 100 100"
 		"LightGrey"				"255 0 0 60"
-		"Purple"				"173 151 227 255"
-		"PurpleDull"			"173 151 227 128"
-		"PurpleVeryDull"		"173 151 227 20"
 		"Black"					"0 0 0 255"
 		"SteamLightGreen"		"158 195 79 255"
 

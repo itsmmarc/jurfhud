@@ -743,7 +743,7 @@
 		"Button.ArmedTextColor"								"SS_Button_Text_Armed"
 		"Button.ArmedBGColor"								"Accent"
 		"Button.DepressedTextColor"							"SS_Button_Text_Armed"
-		"Button.DepressedBGColor"							"SS_Button_BG"
+		"Button.DepressedBGColor"							"Accent"
 		"Button.FocusBorderColor"							"TransparentBlack"
 
 		"CheckButton.TextColor"								"SS_CheckButton_Text"
@@ -809,7 +809,7 @@
 		"Tooltip.BGColor"									"SS_ToolTip_BG"
 
 		"MainMenu.TextColor"								"SS_Label"
-		"MainMenu.ArmedTextColor"							"SS_Label_Selected"
+		"MainMenu.ArmedTextColor"							"Accent"
 		"MainMenu.Backdrop"									"Blank"
 
 		"Menu.FGColor"										"SS_RightClick_Menu_Text"

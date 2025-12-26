@@ -1268,12 +1268,12 @@ Scheme
 			}
 		}
 
-		"ScoreboardColumns"
+		"ScoreboardColumns" // scoreboard headings
 		{
 			"1"
 			{
 				"name"		"Roboto"
-				"tall"		"8"
+				"tall"		"10"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1" [!$OSX]
@@ -1303,31 +1303,55 @@ Scheme
 				"antialias"	"1"
 			}
 		}
-
-		"ScoreboardBody_1"
+        "ScoreboardMedium"  // scoreboard map & server name
 		{
 			"1"
-			{
-				"name"		"Roboto" 
-				"tall"		"10" [!$OSX]
-				"tall"		"11" [$OSX]
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
-			}
+                {
+                    "name"					"Roboto Black"
+                    "tall"					"20" [$WINDOWS]
+                    "tall"					"16" [$LINUX]
+                    "weight"				"500"
+                    "range"					"0x0000 0x007F"
+                    "antialias"				"1"
+                    "additive"				"0"
+                }
+		}
+
+		"ScoreboardSmall"  // scoreboard spectators & timeleft
+		{
+			"1"
+                {
+                    "name"					"Roboto"
+                    "Tall"					"9"
+                    "weight"				"400"
+                    "additive"				"0"
+                    "antialias"				"1"
+                }
+		}
+
+		"ScoreboardBody_1"  // scoreboard player names, ping, etc
+		{
+			"1"
+                {
+                    "name"					"Roboto"
+                    "tall"					"10"
+                    "weight"				"500"
+                    "range"					"0x0000 0x007F"
+                    "antialias"				"1"
+                    "additive"				"0"
+                }
 		}
 
 		"ScoreboardBody_2"
 		{
 			"1"
-			{
-				"name"		"Roboto" 
-				"tall"		"8" [!$OSX]
-				"tall"		"9" [$OSX]
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
-			}
+                {
+                    "name"					"Roboto"
+                    "Tall"					"8"
+                    "weight"				"400"
+                    "additive"				"0"
+                    "antialias"				"1"
+                }
 		}
 
 		"ScoreboardBody_3"
