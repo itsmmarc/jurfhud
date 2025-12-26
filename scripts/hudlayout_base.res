@@ -1,12 +1,12 @@
 "Resource/HudLayout.res"
 {
-	HudHintDisplay
+	HudHintDisplay  // center ksf panel
 	{
 		"fieldName"	"HudHintDisplay"
 		"visible"	"0"
 		"enabled" "1"
 		"xpos"		"cs-0.5"
-		"ypos"		"rs1-10"
+		"ypos"		"rs1-30"
 		"wide"		"480"
 		"tall"		"100"
 		"text_xpos"	"8"
@@ -15,7 +15,7 @@
 		"center_y"	"-1"	// align text on the bottom
 		"HintSize"	"1"
 	}
-	HudHintKeyDisplay
+	HudHintKeyDisplay   // side ksf panel
 	{
 		"fieldName"	"HudHintKeyDisplay"
 		"visible"	"0"
