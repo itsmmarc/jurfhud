@@ -16,12 +16,10 @@
 		"SS_List_Text"										"255 255 255 255"
 		"SS_List_Text_Armed"								"0 0 0 255"
 		"SS_List_Button"									"0 0 0 240"         // server list background & options menu background
-		"SS_List_Button_Armed"								"81 181 182 255"
 
 		"SS_Button_Text"									"255 255 255 255"
 		"SS_Button_Text_Armed"								"0 0 0 255"
 		"SS_Button_BG"										"0 0 0 200"       // button backgrounds
-		"SS_Button_BG_Armed"								"81 181 182 255"
 
 		"SS_Sheet_Text"										"255 255 255 255"
 		"SS_Sheet_Text_Selected"							"255 255 255 255"
@@ -32,11 +30,9 @@
 		"SS_RightClick_Menu_Text"							"255 255 255 255"
 		"SS_RightClick_Menu_Text_Armed"						"255 255 255 255"
 		"SS_RightClick_Menu_BG"								"0 0 0 255"
-		"SS_RightClick_Menu_BG_Armed"						"81 181 182 255"
 		"SS_RightClick_Menu_Divider"						"255 255 255 255"
 
 		"SS_CheckButton_Text"								"255 255 255 255"
-		"SS_CheckButton_Text_Armed"							"98 219 220 255"
 		"SS_CheckButton_BG"									"0 0 0 200"
 		"SS_CheckButton_Armed"								"255 255 255 255"   // checkbox tick
 
@@ -67,12 +63,9 @@
 		"SS_Text_Entry"										"255 255 255 255"   // text box text
 		"SS_Text_Entry_Selected"							"18 15 14 255"      // text box highlighted text
 		"SS_Text_Entry_BG"									"0 0 0 240"         // text box background
-		"SS_Text_Entry_BG_Selected"							"58 130 131 255"    // text box selected text bg
 
 		"SS_Console_Text_BG"								"0 0 0 150"         // console background
 		"SS_Console_Text_Selected"							"18 15 14 255"      // selected text in console
-		"SS_Console_Text_BG_Selected"						"58 130 131 255"    // selected text in console bg
-		"SS_Console_User_Input"								"98 219 220 255"    // text in console that was typed by user
 
 	}
 
@@ -748,7 +741,7 @@
 		"Button.TextColor"									"SS_Button_Text"
 		"Button.BGColor"									"SS_Button_BG"
 		"Button.ArmedTextColor"								"SS_Button_Text_Armed"
-		"Button.ArmedBGColor"								"SS_Button_BG_Armed"
+		"Button.ArmedBGColor"								"Accent"
 		"Button.DepressedTextColor"							"SS_Button_Text_Armed"
 		"Button.DepressedBGColor"							"SS_Button_BG"
 		"Button.FocusBorderColor"							"TransparentBlack"
@@ -756,7 +749,7 @@
 		"CheckButton.TextColor"								"SS_CheckButton_Text"
 		"CheckButton.SelectedTextColor"						"SS_CheckButton_Text"
 		"CheckButton.BGColor"								"SS_CheckButton_BG"
-		"CheckButton.HighlightFGColor"						"SS_CheckButton_Text_Armed"
+		"CheckButton.HighlightFGColor"						"Accent"
 		"CheckButton.ArmedBGColor"							"Blank"
 		"CheckButton.DepressedBGColor"						"Blank"
 		"CheckButton.Border1"								"Blank"     // top/left borders
@@ -773,11 +766,11 @@
 
 		"RadioButton.TextColor"								"SS_CheckButton_Text"
 		"RadioButton.SelectedTextColor"						"SS_CheckButton_Text"
-		"RadioButton.ArmedTextColor"						"SS_CheckButton_Text_Armed"
+		"RadioButton.ArmedTextColor"						"Accent"
 
 		"RichText.BGColor"									"SS_Console_Text_BG"
 		"RichText.SelectedTextColor"						"SS_Console_Text_Selected"
-		"RichText.SelectedBGColor"							"SS_Console_Text_BG_Selected"
+		"RichText.SelectedBGColor"							"Accent"
 
 		"Frame.BGColor"										"SS_Frame_Active"
 		"Frame.OutOfFocusBGColor"							"SS_Frame_Inactive"
@@ -798,8 +791,8 @@
 		"ListPanel.TextColor"								"SS_List_Text"
 		"ListPanel.SelectedTextColor"						"SS_List_Text_Armed"
 		"ListPanel.BGColor"									"SS_List_Button"
-		"ListPanel.SelectedBGColor"							"SS_List_Button_Armed"
-		"ListPanel.SelectedOutOfFocusBGColor"				"SS_List_Button_Armed"
+		"ListPanel.SelectedBGColor"							"Accent"
+		"ListPanel.SelectedOutOfFocusBGColor"				"Accent"
 
 		"SectionedListPanel.HeaderTextColor"				"255 255 255 100"
 		"SectionedListPanel.HeaderBGColor"					"Blank"
@@ -808,9 +801,9 @@
 		"SectionedListPanel.BrightTextColor"				"White"
 		"SectionedListPanel.BGColor"						"SS_List_Button"
 		"SectionedListPanel.SelectedTextColor"				"SS_List_Text_Armed"
-		"SectionedListPanel.SelectedBGColor"				"SS_List_Button_Armed"
+		"SectionedListPanel.SelectedBGColor"				"Accent"
 		"SectionedListPanel.OutOfFocusSelectedTextColor"	"SS_List_Text_Armed"
-		"SectionedListPanel.OutOfFocusSelectedBGColor"		"SS_List_Button_Armed"
+		"SectionedListPanel.OutOfFocusSelectedBGColor"		"Accent"
 
 		"Tooltip.TextColor"									"SS_ToolTip_Text"
 		"Tooltip.BGColor"									"SS_ToolTip_BG"
@@ -822,7 +815,7 @@
 		"Menu.FGColor"										"SS_RightClick_Menu_Text"
 		"Menu.BGColor"										"SS_RightClick_Menu_BG"
 		"Menu.ArmedFGColor"									"SS_RightClick_Menu_Text_Armed"
-		"Menu.ArmedBGColor"									"SS_RightClick_Menu_BG_Armed"
+		"Menu.ArmedBGColor"									"Accent"
 		"Menu.DividerColor"									"SS_RightClick_Menu_Divider"
 
 		"PropertySheet.TextColor"							"SS_Sheet_Text"
@@ -848,9 +841,9 @@
 		"TextEntry.SelectedTextColor"						"SS_Text_Entry_Selected"
 		"TextEntry.DisabledTextColor"						"SS_Text_Entry"
 		"TextEntry.BGColor"									"SS_Text_Entry_BG"
-		"TextEntry.SelectedBGColor"							"SS_Text_Entry_BG_Selected"
+		"TextEntry.SelectedBGColor"							"Accent"
 
-		"Console.TextColor"									"SS_Console_User_Input"
+		"Console.TextColor"									"Accent"
 	}
 	"Borders"
 	{
