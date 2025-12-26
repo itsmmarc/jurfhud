@@ -52,89 +52,57 @@
 		"TerroristTextColor"	"T_Red"	
 	}
 
-
-	HudHealth
-	{
-		"fieldName"		"HudHealth"
-		"xpos"	"573"
-		"ypos"	"449"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-		
-		"icon_xpos"	"0"
-		"icon_ypos"	"0"
-		"digit_xpos" "19"
-		"digit_ypos" "0"
-
-		"LowHealthColor"	"HudMinHealthColor"
-	}
-
-	overview
-	{
-	"fieldname"				"overview"
-	"visible"				"0"
-	"enabled"				"0"
-	"xpos"					"0"
-	"ypos"					"480"
-	"wide"					"0"
-	"tall"					"0"
-	}
-
 	HudCommentary
 	{
-	"fieldName" "HudCommentary"
-	"xpos"	"c-190"
-	"ypos"	"350"
-	"wide"	"380"
-	"tall"  "40"
-	"visible" "0"
-	"enabled" "0"
-		
-	"PaintBackgroundType"	"2"
-		
-	"bar_xpos"		"50"
-	"bar_ypos"		"20"
-	"bar_height"	"8"
-	"bar_width"		"320"
-	"speaker_xpos"	"50"
-	"speaker_ypos"	"8"
-	"count_xpos_from_right"	"10"	// Counts from the right side
-	"count_ypos"	"8"
-		
-	"icon_texture"	"vgui/hud/icon_commentary"
-	"icon_xpos"		"0"
-	"icon_ypos"		"0"		
-	"icon_width"	"40"
-	"icon_height"	"40"
+        "fieldName" "HudCommentary"
+        "xpos"	"c-190"
+        "ypos"	"350"
+        "wide"	"380"
+        "tall"  "40"
+        "visible" "0"
+        "enabled" "0"
+            
+        "PaintBackgroundType"	"2"
+            
+        "bar_xpos"		"50"
+        "bar_ypos"		"20"
+        "bar_height"	"8"
+        "bar_width"		"320"
+        "speaker_xpos"	"50"
+        "speaker_ypos"	"8"
+        "count_xpos_from_right"	"10"	// Counts from the right side
+        "count_ypos"	"8"
+            
+        "icon_texture"	"vgui/hud/icon_commentary"
+        "icon_xpos"		"0"
+        "icon_ypos"		"0"		
+        "icon_width"	"40"
+        "icon_height"	"40"
 	}
 	
 	HudHDRDemo
 	{
-	"fieldName" "HudHDRDemo"
-	"xpos"	"0"
-	"ypos"	"0"
-	"wide"	"640"
-	"tall"  "480"
-	"visible" "0"
-	"enabled" "1"
-		
-	"Alpha"	"255"
-	"PaintBackgroundType"	"2"
-		
-	"BorderColor"	"0 0 0 255"
-	"BorderLeft"	"16"
-	"BorderRight"	"16"
-	"BorderTop"		"16"
-	"BorderBottom"	"64"
-			"BorderCenter"	"0"
-		
-	"TextColor"		"255 255 255 255"
-	"LeftTitleY"	"422"
-	"RightTitleY"	"422"
+        "fieldName" "HudHDRDemo"
+        "xpos"	"0"
+        "ypos"	"0"
+        "wide"	"640"
+        "tall"  "480"
+        "visible" "0"
+        "enabled" "1"
+            
+        "Alpha"	"255"
+        "PaintBackgroundType"	"2"
+            
+        "BorderColor"	"0 0 0 255"
+        "BorderLeft"	"16"
+        "BorderRight"	"16"
+        "BorderTop"		"16"
+        "BorderBottom"	"64"
+        "BorderCenter"	"0"
+            
+        "TextColor"		"255 255 255 255"
+        "LeftTitleY"	"422"
+        "RightTitleY"	"422"
 	}
 
 	TargetID
@@ -144,24 +112,6 @@
 		"enabled" "1"
 		"wide"	 "640"
 		"tall"	 "480"
-	}
-
-	HudArmor
-	{
-		"fieldName"		"HudArmor"
-		"xpos"	"156"
-		"ypos"	"443"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-		
-		"icon_xpos"	"0"
-		"icon_ypos"	"0"
-		"digit_xpos" "33"
-		"digit_ypos" "0"
 	}
 	
 	HudSuit
@@ -196,154 +146,7 @@
 		"BorderThickness" "1"
 
 		"PaintBackgroundType"	"2"
-	}
-	HudRoundTimer
-	{
-		"fieldName" "HudRoundTimer"
-		"xpos"	"c-28"
-		"ypos"	"446"
-		"zpos"	"1"
-		"wide"	"0"
-		"tall"  "0"
-		"visible" "0"
-		"enabled" "0"
-		
-		"PaintBackgroundType"	"2"
- 		"bgcolor_override"		"0 0 0 96"
-
-		"FlashColor" "HudIcon_Red"		
-
-		"icon_xpos"		"8"
-		"icon_ypos"		"-4"
-		"digit_xpos"	"42"
-		"digit_ypos"	"-4"
     }
-	HudAccount
-	{
-		"fieldName" "HudAccount"
-		"xpos"	"r135"
-		"ypos"	"377"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-
-		"icon_xpos"	"0"
-		"icon_ypos"	"34"
-		"digit_xpos" "114"
-		"digit_ypos" "36"
-		"icon2_xpos"	"0"
-		"icon2_ypos"	"0"
-		"digit2_xpos" "114"
-		"digit2_ypos" "2"
-	}
-
-	HudShoppingCart
-	{
-		"fieldName" "HudShoppingCart"
-		"xpos"	"64"
-		"ypos"	"240"
-		"wide"	"0"
-		"tall"  "40"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-		"IconColor"			"HudIcon_Green"
-
-	}
-
-	HudC4
-	{
-		"fieldName" "HudC4"
-		"xpos"		"16"
-		"ypos"		"249"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-	
-
-		"PaintBackgroundType"	"2"
-		"IconColor"			"C4Color"
-		"FlashColor"		"C4FlashColor"
-
-	}
-
-	HudDefuser
-	{
-		"fieldName" "HudDefuser"
-		"xpos"		"16"
-		"ypos"		"249"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-
-		"IconColor"				"DefuseColor"
-
-	}
-
-	HudHostageRescueZone
-	{
-		"fieldName" "HudHostageRescueZone"
-		"xpos"		"16"
-		"ypos"		"249"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-	
-
-		"PaintBackgroundType"	"2"
-		"IconColor"			"HostagesColor"
-		"FlashColor"		"HudIcon_Red"
-	}
-
-	HudScenarioIcon 
-	{
-		"fieldName" "HudScenarioIcon"
-		"xpos"	"c109"
-		"ypos"	"444"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-
-		"IconColor"				"ScenarioColor"	
-	}
-
-	HudAmmo
-	{
-		"fieldName" "HudAmmo"
-		"xpos"	"r150"
-		"ypos"	"443"
-		"wide"	"0"
-		"tall"	"0"
-		"visible" "0"
-		"enabled" "0"
-
-		"PaintBackgroundType"	"2"
-
-		"digit_xpos" "0"
-		"digit_ypos" "2"
-		"digit2_xpos" "55"
-		"digit2_ypos" "2"
-	
-		"bar_xpos"		"46"
-		"bar_ypos"		"7"
-		"bar_height"	"20"
-		"bar_width"		"2"
-
-		"icon_xpos"		"103"
-		"icon_ypos"		"8"
-	}
 	
 	HudFlashlight
 	{
@@ -361,22 +164,6 @@
 
 		"PaintBackgroundType"	"2"
 	}
-	
-	HudDamageIndicator
-	{
-		"fieldName" "HudDamageIndicator"
-		"visible" "0"
-		"enabled" "0"
-		"DmgColorLeft" "255 0 0 0"
-		"DmgColorRight" "255 0 0 0"
-		
-		"dmg_xpos" "30"
-		"dmg_ypos" "100"
-		"dmg_wide" "36"
-		"dmg_tall1" "240"
-		"dmg_tall2" "200"
-	}
-
 
 	HudZoom
 	{
@@ -411,15 +198,6 @@
 		"TextColor" "SelectionTextFg"
 		"MaxSlots"	"5"
 		"PlaySelectSounds"	"0"
-	}
-
-	HudCrosshair
-	{
-		"fieldName" "HudCrosshair"
-		"visible" "0"
-		"enabled" "0"
-		"wide"	 "640"
-		"tall"	 "480"
 	}
 
 	HudVehicle
@@ -582,19 +360,6 @@
 		"tall"	 "480"
 	}
 
-	HudLocation
-	{
-		"fieldName" "HudLocation"
-		"visible"	"0"
-		"enabled"	"0"
-		"xpos"		"16"
-		"ypos"		"112"
-		"wide"		"96"
-		"tall"		"16"
-		"textAlignment"	"north"
-	}
-
-
 	HudScope
 	{
 		"fieldName" "HudZoom"
@@ -666,5 +431,232 @@
 		"ypos"		"16"
 		"wide"		"96"
 		"tall"		"96"
+	}
+    HudHealth   // dead
+	{
+		"fieldName"		"HudHealth"
+		"xpos"	"573"
+		"ypos"	"449"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+		
+		"icon_xpos"	"0"
+		"icon_ypos"	"0"
+		"digit_xpos" "19"
+		"digit_ypos" "0"
+
+		"LowHealthColor"	"HudMinHealthColor"
+	}
+
+	overview    // dead
+    {
+        "fieldname"				"overview"
+        "visible"				"0"
+        "enabled"				"0"
+        "xpos"					"0"
+        "ypos"					"480"
+        "wide"					"0"
+        "tall"					"0"
+    }
+    HudArmor    // dead
+	{
+		"fieldName"		"HudArmor"
+		"xpos"	"156"
+		"ypos"	"443"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+		
+		"icon_xpos"	"0"
+		"icon_ypos"	"0"
+		"digit_xpos" "33"
+		"digit_ypos" "0"
+	}
+    HudRoundTimer   // dead
+	{
+		"fieldName" "HudRoundTimer"
+		"xpos"	"c-28"
+		"ypos"	"446"
+		"zpos"	"1"
+		"wide"	"0"
+		"tall"  "0"
+		"visible" "0"
+		"enabled" "0"
+		
+		"PaintBackgroundType"	"2"
+ 		"bgcolor_override"		"0 0 0 96"
+
+		"FlashColor" "HudIcon_Red"		
+
+		"icon_xpos"		"8"
+		"icon_ypos"		"-4"
+		"digit_xpos"	"42"
+		"digit_ypos"	"-4"
+    }
+	HudAccount  // dead
+	{
+		"fieldName" "HudAccount"
+		"xpos"	"r135"
+		"ypos"	"377"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+
+		"icon_xpos"	"0"
+		"icon_ypos"	"34"
+		"digit_xpos" "114"
+		"digit_ypos" "36"
+		"icon2_xpos"	"0"
+		"icon2_ypos"	"0"
+		"digit2_xpos" "114"
+		"digit2_ypos" "2"
+	}
+
+	HudShoppingCart // dead
+	{
+		"fieldName" "HudShoppingCart"
+		"xpos"	"64"
+		"ypos"	"240"
+		"wide"	"0"
+		"tall"  "40"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+		"IconColor"			"HudIcon_Green"
+
+	}
+
+	HudC4   // dead
+	{
+		"fieldName" "HudC4"
+		"xpos"		"16"
+		"ypos"		"249"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+	
+
+		"PaintBackgroundType"	"2"
+		"IconColor"			"C4Color"
+		"FlashColor"		"C4FlashColor"
+
+	}
+
+	HudDefuser  // dead
+	{
+		"fieldName" "HudDefuser"
+		"xpos"		"16"
+		"ypos"		"249"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+
+		"IconColor"				"DefuseColor"
+
+	}
+
+	HudHostageRescueZone    // dead
+	{
+		"fieldName" "HudHostageRescueZone"
+		"xpos"		"16"
+		"ypos"		"249"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+	
+
+		"PaintBackgroundType"	"2"
+		"IconColor"			"HostagesColor"
+		"FlashColor"		"HudIcon_Red"
+	}
+
+	HudScenarioIcon // dead
+	{
+		"fieldName" "HudScenarioIcon"
+		"xpos"	"c109"
+		"ypos"	"444"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+
+		"IconColor"				"ScenarioColor"	
+	}
+
+	HudAmmo // dead
+	{
+		"fieldName" "HudAmmo"
+		"xpos"	"r150"
+		"ypos"	"443"
+		"wide"	"0"
+		"tall"	"0"
+		"visible" "0"
+		"enabled" "0"
+
+		"PaintBackgroundType"	"2"
+
+		"digit_xpos" "0"
+		"digit_ypos" "2"
+		"digit2_xpos" "55"
+		"digit2_ypos" "2"
+	
+		"bar_xpos"		"46"
+		"bar_ypos"		"7"
+		"bar_height"	"20"
+		"bar_width"		"2"
+
+		"icon_xpos"		"103"
+		"icon_ypos"		"8"
+	}
+    HudDamageIndicator  // dead
+	{
+		"fieldName" "HudDamageIndicator"
+		"visible" "0"
+		"enabled" "0"
+		"DmgColorLeft" "255 0 0 0"
+		"DmgColorRight" "255 0 0 0"
+		
+		"dmg_xpos" "30"
+		"dmg_ypos" "100"
+		"dmg_wide" "36"
+		"dmg_tall1" "240"
+		"dmg_tall2" "200"
+	}
+    HudCrosshair    // dead
+	{
+		"fieldName" "HudCrosshair"
+		"visible" "0"
+		"enabled" "0"
+		"wide"	 "640"
+		"tall"	 "480"
+	}
+    HudLocation // dead
+	{
+		"fieldName" "HudLocation"
+		"visible"	"0"
+		"enabled"	"0"
+		"xpos"		"16"
+		"ypos"		"112"
+		"wide"		"96"
+		"tall"		"16"
+		"textAlignment"	"north"
 	}
 }
