@@ -208,6 +208,13 @@
         Subtract { srcVar1 "$prev_v" srcVar2 "$badRange" resultVar "$badThreshold"}
         LessOrEqual {
             srcVar1         "$v"
+            srcVar2         "$0"
+            resultVar       "$color"
+            greaterVar      "$color"
+            lessEqualVar    "$colorMain"
+        }
+        LessOrEqual {
+            srcVar1         "$v"
             srcVar2         "$goodThreshold"
             resultVar       "$color"
             greaterVar      "$colorGood"
@@ -220,7 +227,7 @@
             greaterVar      "$color"
             lessEqualVar    "$colorBad"
         }
-    //
+    //==============================================================
 		// prev_x = x, prev_y = y, prev_z = z, prev_t = t, prev_v = v
 		Equals { srcVar1 "$x" resultVar "$prev_x" }
 		Equals { srcVar1 "$y" resultVar "$prev_y" }
