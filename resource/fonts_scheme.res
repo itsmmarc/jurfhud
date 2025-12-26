@@ -9,24 +9,35 @@ Scheme
 		// fonts are used in order that they are listed
 		// fonts listed later in the order will only be used if they fulfill a range not already filled
 		// if a font fails to load then the subsequent fonts will replace
-        "TeamMenu"
+        "TeamMenuBold"
         {
             "1"
             {
-                "name"										"Roboto"
-                "Tall"										"42"
+                "name"										"Roboto Black"
+                "Tall"										"36"
                 "weight"									"600"
                 "additive"									"0"
                 "antialias"									"1"
             }
         }
-        "TeamMenuBold"
+        "TeamMenu"
+        {
+            "1"
+            {
+                "name"										"Roboto Black"
+                "Tall"										"24"
+                "weight"									"500"
+                "additive"									"0"
+                "antialias"									"1"
+            }
+        }
+        "TeamMenuSmall"
         {
             "1"
             {
                 "name"										"Roboto"
-                "Tall"										"36"
-                "weight"									"500"
+                "Tall"										"16"
+                "weight"									"200"
                 "additive"									"0"
                 "antialias"									"1"
             }
@@ -668,83 +679,83 @@ Scheme
 			}
 		}
 		CSType
-		  {
-		   "1"
-		   {
-			"name"  "cs" // cs.ttf
-			"tall"  "80"
-			"weight" "0"
-			"additive" "1"
-			"antialias" "1"
-			"custom" "1" [$OSX]
-		   }
-		  }
+        {
+            "1"
+            {
+                "name"  "cs" // cs.ttf
+                "tall"  "80"
+                "weight" "0"
+                "additive" "1"
+                "antialias" "1"
+                "custom" "1" [$OSX]
+            }
+        }
 
 		CSweapons // temporary, for testing. overlaps with CSType, above
-		  {
-		   "1"
-		   {
-			"name"  "Counter-Strike" // Cstrike.ttf
-			"tall"  "70"
-			"weight" "0"
-			"additive" "1"
-			"antialias" "1"
-			"custom" "1" [$OSX]
-		   }
-		  }
+        {
+            "1"
+            {
+                "name"  "Counter-Strike" // Cstrike.ttf
+                "tall"  "70"
+                "weight" "0"
+                "additive" "1"
+                "antialias" "1"
+                "custom" "1" [$OSX]
+            }
+        }
 
 		CSweaponsSmall 
-		  {
-		   "1"
-		   {
-			"name"  "Counter-Strike" // Cstrike.ttf
-			"tall"  "60"
-			"weight" "0"
-			"additive" "1"
-			"antialias" "1"
-			"custom" "1" [$OSX]
-		   }
-		  }
+        {
+            "1"
+            {
+                "name"  "Counter-Strike" // Cstrike.ttf
+                "tall"  "60"
+                "weight" "0"
+                "additive" "1"
+                "antialias" "1"
+                "custom" "1" [$OSX]
+            }
+        }
 
 		
 		CSTypeSmall
-		  {
-		   "1"
-		   {
-			"name"  "cs" // cs.ttf
-			"tall"  "40"
-			"weight" "20"
-			"additive" "1"
-			"antialias" "1"
-			"custom" "1" [$OSX]
-		   }
-		  }
+        {
+            "1"
+            {
+                "name"  "cs" // cs.ttf
+                "tall"  "40"
+                "weight" "20"
+                "additive" "1"
+                "antialias" "1"
+                "custom" "1" [$OSX]
+            }
+        }
 		  
-		  CSTypelr
-		  {
-		   "1"
-		   {
-			"name"  "cs" // cs.ttf
-			"tall"  "30"
-			"weight" "0"
-			"additive" "1"
-			"antialias" "1"
-			"custom" "1" [$OSX]
-		   }
-		  }
+        CSTypelr
+        {
+            "1"
+            {
+                "name"  "cs" // cs.ttf
+                "tall"  "30"
+                "weight" "0"
+                "additive" "1"
+                "antialias" "1"
+                "custom" "1" [$OSX]
+            }
+        }
 
-		  CSTypeDeath
-		  {
-		   "1"
-		   {
-			"name"  "csd" // csd.ttf
-			"tall"  "42"
-			"weight" "0"
-			"additive" "1"
-			"antialias" "1"
-			"custom" "1" [$OSX]
-		   }
-		  }
+        CSTypeDeath
+        {
+            "1"
+            {
+                "name"  "csd" // csd.ttf
+                "tall"  "42"
+                "weight" "0"
+                "additive" "1"
+                "antialias" "1"
+                "custom" "1" [$OSX]
+            }
+        }
 		
 		Icons
 		{
