@@ -35,7 +35,7 @@ Scheme
 		"Black2"					"0 0 0 170"
 		"Black"					"0 0 0 255"
 		"Black3"				"0 0 0 220"
-		"typhoonpink"			"251 160 227 255"
+		"Accent"			    "35 125 235 255"
 		"SteamLightGreen"		"158 195 79 255"
 		
 	}
@@ -46,24 +46,24 @@ Scheme
 	// controls use these to determine their settings
 	BaseSettings
 	{
-		Border.Bright						"typhoonpink"				// top left border for team select
-		Border.Dark							"typhoonpink"				// bottom right border for team select menu
+		Border.Bright						"Accent"				// top left border for team select
+		Border.Dark							"Accent"				// bottom right border for team select menu
 		
-		Button.TextColor					"typhoonpink"				// team select text colour not hovering
+		Button.TextColor					"Accent"				// team select text colour not hovering
 		Button.BgColor						"Black2"					// team select background colour not hovering
-		Button.ArmedTextColor				"typhoonpink"				// team select text colour hovering	
+		Button.ArmedTextColor				"Accent"				// team select text colour hovering	
 		Button.ArmedBgColor					"Black3"					// team select background colour hovering
 
-		ComboBoxButton.ArrowColor			"typhoonpink"				// spectator bar arrow
-		ComboBoxButton.ArmedArrowColor		"typhoonpink"				// spectator bar arrow hover 
+		ComboBoxButton.ArrowColor			"Accent"				// spectator bar arrow
+		ComboBoxButton.ArmedArrowColor		"Accent"				// spectator bar arrow hover 
 		ComboBoxButton.BgColor				"Black2"					// spectator bar arrow box fill colour
 
 		Frame.BgColor						"Black2"					// spectator bar background 
 		Frame.FocusTransitionEffectTime		"0"							// time it takes for a server browser to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime			"0"							// time it takes for a server browser to fade in/out on open/close
 		Frame.AutoSnapRange					"0"
-		FrameGrip.Color1					"typhoonpink"				// highlighted spec menu text
-		FrameTitleButton.FgColor			"typhoonpink"				// team select/spectator cross
+		FrameGrip.Color1					"Accent"				// highlighted spec menu text
+		FrameTitleButton.FgColor			"Accent"				// team select/spectator cross
 		FrameTitleButton.BgColor			"Back2"						// team select/spectator cross box fill
 
 		Label.TextColor						"Blank"						// SELECT TEAM text & map name top right
@@ -78,46 +78,46 @@ Scheme
 		Menu.TextColor						"White"						// spectator bar menu text colour
 		Menu.BgColor						"Black2"					// spectator bar menu background fill
 		Menu.ArmedTextColor					"White"						// spectator bar menu text colour hover
-		Menu.ArmedBgColor					"typhoonpink"				// spectator bar menu background fill hover
+		Menu.ArmedBgColor					"Accent"				// spectator bar menu background fill hover
 		
 		Panel.BgColor						"Blank"						// some panel background fill( LEAVE BLANK )
 
 		PropertySheet.TransitionEffectTime	"0.25"						// time to change from one tab to another
 
 		RichText.BgColor					"Black2"					// team select background fill
-		RichText.SelectedTextColor			"typhoonpink"				// team select highlighted text 
+		RichText.SelectedTextColor			"Accent"				// team select highlighted text 
 		RichText.SelectedBgColor			"Black2"					// team select highlighted background 
 
-		ScrollBarButton.FgColor				"typhoonpink"				// team select bar square arrow
+		ScrollBarButton.FgColor				"Accent"				// team select bar square arrow
 		ScrollBarButton.BgColor				"Black2"					// team select bar square fill
-		ScrollBarButton.ArmedFgColor		"typhoonpink"				// team select bar square arrow hover
+		ScrollBarButton.ArmedFgColor		"Accent"				// team select bar square arrow hover
 		ScrollBarButton.ArmedBgColor		"Black3"					// team select bar square fill hover
 		ScrollBarButton.DepressedFgColor	"Black3"					// team select bar square arrow on click
 		ScrollBarButton.DepressedBgColor	"Black3"					// team select bar square fill on click
-		ScrollBarSlider.FgColor				"typhoonpink"				// team select slider
+		ScrollBarSlider.FgColor				"Accent"				// team select slider
 		ScrollBarSlider.BgColor				"Black2"					// team select slider background 
 
-		TextEntry.TextColor					"typhoonpink"				// spectator bar menu text
+		TextEntry.TextColor					"Accent"				// spectator bar menu text
 		TextEntry.BgColor					"Black2"					// spectator bar menu fill
 		TextEntry.SelectedTextColor			"White"						// spectator bar menu text highlighted
-		TextEntry.SelectedBgColor			"typhoonpink"				// spectator bar menu text background highlighted
+		TextEntry.SelectedBgColor			"Accent"				// spectator bar menu text background highlighted
 
 		"FgColor"							"Blank"						// colour of the cs icon in team select
 
-		"MapDescriptionText"				"typhoonpink" 				// the text used in the choose team window
+		"MapDescriptionText"				"Accent" 				// the text used in the choose team window
 		
 		"ItemColor"							"White"						// radio text 2
-		"MenuColor"							"typhoonpink" 				// radio text 1
+		"MenuColor"							"Accent" 				// radio text 1
 		"MenuBoxBg"							"0 0 0 0"					// radio menu background
 		
 
 		"HintMessageFg"						"White"						// timer text
 		"HintMessageBg" 					"Blank"						// timer background
 		
-        "Normal"            				"typhoonpink"				// weapon icon select colour
+        "Normal"            				"Accent"				// weapon icon select colour
 		
-		"CT_Blue"							"typhoonpink"				// text on player crosshair hovering person
-		"T_Red"								"typhoonpink"				// text on player crosshair hovering person
+		"CT_Blue"							"Accent"				// text on player crosshair hovering person
+		"T_Red"								"Accent"				// text on player crosshair hovering person
 
 	
 		

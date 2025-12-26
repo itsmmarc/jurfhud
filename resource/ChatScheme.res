@@ -20,7 +20,6 @@ Scheme
 	{
 		"White"					"255 255 255 255"
 		"TransparentBlack"		"5 5 5 100"
-		"TransparentBlack2"		"5 5 5 50"
 		"Blank"					"0 0 0 0"	
 		"Red"					"255 0 0 255"
 		"Green"					"0 255 0 255"
@@ -34,8 +33,28 @@ Scheme
 		"Black2"					"0 0 0 170"
 		"Black"					"0 0 0 255"
 		"Black3"				"0 0 0 220"
-		"typhoonpink"			"251 160 227 255"
 		"SteamLightGreen"		"158 195 79 255"
+
+        "Accent"                "35 125 235 255"
+
+        "Blank"                 "0 0 0 0"
+        "SS_Label"				"255 255 255 255"
+        "DullWhite"				"142 142 142 255"
+        "OffWhite"				"216 216 216 255"
+        "Orange"				"255 155 0 255"
+
+        "SS_ScrollBar"										"255 255 255 50"
+		"SS_ScrollBar_BG"									"0 0 0 0"   // def "18 15 14 200"      
+		"SS_ScrollBar_Button_Icon"							"0 0 0 0"   // def "255 255 255 255"   // scroll up and scroll down arrows
+		"SS_ScrollBar_Button_Icon_Armed"					"0 0 0 0"   // def "255 255 255 255"   // scroll up and scroll down arrows armed
+		"SS_ScrollBar_Button_BG"							"0 0 0 0"   // def "18 15 14 255"   
+		"SS_ScrollBar_Button_BG_Armed"						"0 0 0 0"   // def "81 181 182 255"     // scroll up and scroll down arrows bg
+        // right click menu also does dropdown lists
+		"SS_RightClick_Menu_Text"							"255 255 255 255"
+		"SS_RightClick_Menu_Text_Armed"						"255 255 255 255"
+		"SS_RightClick_Menu_BG"								"0 0 0 255"
+		"SS_RightClick_Menu_BG_Armed"						"81 181 182 255"
+		"SS_RightClick_Menu_Divider"						"255 255 255 255"
 	}
 
 	///////////////////// BASE SETTINGS ////////////////////////
@@ -45,10 +64,10 @@ Scheme
 	BaseSettings
 	{
 		
-		Border.Bright						"typhoonpink"				// top left border 
-		Border.Dark							"typhoonpink"				// bottom right border
+		Border.Bright						"Blank"				// top left border 
+		Border.Dark							"Blank"				// bottom right border
 
-		Label.TextColor						"White" 					// the Say: text
+		Label.TextColor						"SS_Label" 					// the Say: text
 		Label.BgColor						"Blank" 					// the Say: text background
 
 
@@ -57,30 +76,30 @@ Scheme
 
 		PropertySheet.TransitionEffectTime	"0.25"						// dont delete this
 
-		RichText.SelectedTextColor			"White"						// selected text
-		RichText.SelectedBgColor			"typhoonpink"				// selected text background
+		RichText.SelectedTextColor			"OffWhite"						// selected text
+		RichText.SelectedBgColor			"Accent"				// selected text background
 
-		ScrollBar.Wide						"8"							// scroll bar width
+		ScrollBar.Wide						"6"							// scroll bar width
 
-		ScrollBarButton.FgColor				"White"						// scroll bar arrow					
-		ScrollBarButton.BgColor				"Blank"						// scroll bar arrow box fill
-		ScrollBarButton.ArmedFgColor		"White"						// scroll bar arrow on hover
-		ScrollBarButton.ArmedBgColor		"Blank"						// scroll bar arrow box fill on hover
-		ScrollBarButton.DepressedFgColor	"White"						// scroll bar arrow on click
-		ScrollBarButton.DepressedBgColor	"Blank"						// scroll bar arrow box fill on click
+		ScrollBarButton.FGColor							    "SS_ScrollBar_Button_Icon"
+		ScrollBarButton.BGColor							    "SS_ScrollBar_Button_BG"
+		ScrollBarButton.ArmedFGColor						"SS_ScrollBar_Button_Icon_Armed"
+		ScrollBarButton.ArmedBGColor						"SS_ScrollBar_Button_BG_Armed"
+		ScrollBarButton.DepressedFGColor					"SS_ScrollBar_Button_Icon_Armed"
+		ScrollBarButton.DepressedBGColor					"SS_ScrollBar_Button_BG_Armed"
 
-		ScrollBarSlider.FgColor				"Blank"						// scroll bar 
-		ScrollBarSlider.BgColor				"Blank"						// scroll bar background
+		ScrollBarSlider.BGColor							"SS_ScrollBar_BG"
+		ScrollBarSlider.FGColor							"SS_ScrollBar"
 
 			
 		TextEntry.BgColor					"TransparentBlack"			// chat box background fill
-		TextEntry.SelectedTextColor			"White"						// chat box text highlighted
-		TextEntry.SelectedBgColor			"typhoonpink"				// chat box text highlighted background
+		TextEntry.SelectedTextColor			"Black"						// chat box text highlighted
+		TextEntry.SelectedBgColor			"Accent"				    // chat box text highlighted background
 		
-		Menu.TextColor               		"typhoonpink"				// chat right click text
+		Menu.TextColor               		"Accent"				    // chat right click text
         Menu.BgColor               			"TransparentBlack"			// chat right click background fill
-        Menu.ArmedTextColor           		"typhoonpink"				// chat right click text on hover
-        Menu.ArmedBgColor            		"TransparentBlack2"			// chat right click background fill on hover
+        Menu.ArmedTextColor           		"Accent"				    // chat right click text on hover
+        Menu.ArmedBgColor            		"TransparentBlack"			// chat right click background fill on hover
         Menu.TextInset                		"6"							// 
 		
 
@@ -105,7 +124,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"15"
 				"weight"	"400"
 				"range"		"0x0000 0x017F"
@@ -116,7 +135,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"16"
 				"weight"	"400"
 				"range"		"0x0000 0x017F"
@@ -127,7 +146,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"17"
 				"weight"	"400"
 				"range"		"0x0000 0x017F"
@@ -138,7 +157,7 @@ Scheme
 			}
 			"4"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"20"
 				"weight"	"400"
 				"range"		"0x0000 0x017F"
@@ -149,7 +168,7 @@ Scheme
 			}
 			"5"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"22"
 				"weight"	"400"
 				"range"		"0x0000 0x017F"
@@ -210,7 +229,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"15"
 				"weight"	"400"
 				"yres"		"480 599"
@@ -220,7 +239,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"16"
 				"weight"	"400"
 				"yres"		"600 767"
@@ -230,7 +249,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"17"
 				"weight"	"400"
 				"yres"		"768 1023"
@@ -240,7 +259,7 @@ Scheme
 			}
 			"4"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"20"
 				"weight"	"400"
 				"yres"		"1024 1199"
@@ -250,7 +269,7 @@ Scheme
 			}
 			"5"
 			{
-				"name"		"URW Gothic L"
+				"name"		"Roboto"
 				"tall"		"22"
 				"weight"	"400"
 				"yres"		"1200 10000"
