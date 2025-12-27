@@ -56,7 +56,7 @@
 		"Enabled"									"0"
 		"ProportionalToParent"						"1"
 	}
-	"MapName"
+	"MapName"   // doesnt work?
 	{
 		"ControlName"								"Label"
 		"FieldName"									"MapName"
@@ -70,7 +70,7 @@
 		"TextAlignment"								"center"
         "allcaps"                                   "1"
 		"Font"										"TeamMenu"
-        "LabelText" "%map%"
+        "LabelText" ""
 		"FGColor"									"White"
 		"ProportionalToParent"						"1"
 
@@ -85,7 +85,7 @@
 		"xpos"			    "0"
 		"ypos"			    "-60"
 		"wide"			    "110"
-		"tall"			    "50"
+		"tall"			    "40"
 		"visible"		    "1"
 		"enabled"		    "1"
 		"tabPosition"		"0"
@@ -98,29 +98,6 @@
 		"Default"		    "1"
 
         "Pin_To_Sibling"			"TeamsAnchor"
-		"Pin_Corner_To_Sibling"		"PIN_CENTER_TOP"
-		"Pin_To_Sibling_Corner"		"PIN_CENTER_BOTTOM"
-	}
-	"specbutton"    // SPECTATE
-	{
-		"ControlName"		"Button"
-		"fieldName"		    "specbutton"
-		"xpos"			    "0"
-		"ypos"			    "5"
-		"wide"			    "110"
-		"tall"			    "50"
-		"autoResize"		"0"
-		"visible"		    "1"
-		"enabled"		    "1"
-		"tabPosition"		"2"
-        "Font"				"TeamMenu"
-		"labelText"		    "SPECTATE"
-		"textAlignment"		"center"
-		"dulltext"		    "0"
-		"brighttext"		"0"
-		"command"		    "jointeam 1"
-
-        "Pin_To_Sibling"			"autobutton"
 		"Pin_Corner_To_Sibling"		"PIN_CENTER_TOP"
 		"Pin_To_Sibling_Corner"		"PIN_CENTER_BOTTOM"
 	}
@@ -144,7 +121,7 @@
 		"brighttext"		"0"
 		"command"		    "jointeam 2"
 
-        "Pin_To_Sibling"			"specbutton"
+        "Pin_To_Sibling"			"autobutton"
 		"Pin_Corner_To_Sibling"		"PIN_CENTER_TOP"
 		"Pin_To_Sibling_Corner"		"PIN_CENTER_BOTTOM"
 	}
@@ -168,7 +145,30 @@
 		"brighttext"		"0"
 		"command"		    "jointeam 3"
 
-        "Pin_To_Sibling"			"specbutton"
+        "Pin_To_Sibling"			"autobutton"
+		"Pin_Corner_To_Sibling"		"PIN_CENTER_TOP"
+		"Pin_To_Sibling_Corner"		"PIN_CENTER_BOTTOM"
+	}
+    "specbutton"    // SPECTATE
+	{
+		"ControlName"		"Button"
+		"fieldName"		    "specbutton"
+		"xpos"			    "0"
+		"ypos"			    "30"
+		"wide"			    "110"
+		"tall"			    "30"
+		"autoResize"		"0"
+		"visible"		    "1"
+		"enabled"		    "1"
+		"tabPosition"		"2"
+        "Font"				"TeamMenu"
+        "labelText"		    "SPECTATE"
+		"textAlignment"		"center"
+		"dulltext"		    "0"
+		"brighttext"		"0"
+		"command"		    "jointeam 1"
+
+        "Pin_To_Sibling"			"autobutton"
 		"Pin_Corner_To_Sibling"		"PIN_CENTER_TOP"
 		"Pin_To_Sibling_Corner"		"PIN_CENTER_BOTTOM"
 	}
@@ -177,7 +177,7 @@
 		"ControlName"		"Button"
 		"fieldName"		    "CancelButton"
 		"xpos"			    "0"
-		"ypos"			    "40"
+		"ypos"			    "5"
 		"wide"			    "100"
 		"tall"			    "20"
 		"autoResize"		"0"

@@ -35,9 +35,9 @@ Scheme
         {
             "1"
             {
-                "name"										"Roboto"
-                "Tall"										"16"
-                "weight"									"200"
+                "name"										"Roboto Black"
+                "Tall"										"20"
+                "weight"									"400"
                 "additive"									"0"
                 "antialias"									"1"
             }
