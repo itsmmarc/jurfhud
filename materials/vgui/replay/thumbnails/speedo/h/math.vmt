@@ -200,6 +200,15 @@
 			lessEqualVar "$v" greaterVar "$speedo"
 			resultVar "$speedo"
 		}
+    //==============================================================
+    // ROUNDING
+    //--------------------------------------------------------------
+        // $speedo = $speedo/10
+        Divide { srcVar1 "$speedo" srcVar2 "$roundAmount" resultVar "$speedo" }
+        // discard decimals of $speedo
+        Int { srcVar1 "$speedo" resultVar "$speedo"}
+        // $speedo = $speedo*10
+		Multiply { srcVar1 "$speedo" srcVar2 "$roundAmount" resultVar "$speedo" }
 		
     //==============================================================
     // COLORS
@@ -246,16 +255,6 @@
             "srcVar1"                                               "$value"
             "resultVar"                                             "$frame"
         }
-
-    //==============================================================
-    // ROUNDING
-    //--------------------------------------------------------------
-        // $frame = $frame/10
-        Divide { srcVar1 "$frame" srcVar2 "$roundAmount" resultVar "$frame" }
-        // discard decimals of $frame
-        Int { srcVar1 "$frame" resultVar "$frame"}
-        // $frame = $frame*10
-		Multiply { srcVar1 "$frame" srcVar2 "$roundAmount" resultVar "$frame" }
 
     //==============================================================
     // DIGIT SEPERATION
