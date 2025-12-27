@@ -6,7 +6,7 @@
 		"visible"	"0"
 		"enabled" "1"
 		"xpos"		"cs-0.5"
-		"ypos"		"rs1-30"
+		"ypos"		"rs1-10"
 		"wide"		"480"
 		"tall"		"100"
 		"text_xpos"	"8"

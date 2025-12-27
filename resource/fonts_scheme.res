@@ -42,6 +42,15 @@ Scheme
                 "antialias"									"1"
             }
         }
+        "SpectatorName"
+        {
+            "1"
+			{
+				"name"		"Roboto Black"
+				"tall"		"28"
+                "antialias"	"1"
+			}
+        }
 		"Default"   // ksf side panel
 		{
 			"1"
@@ -562,12 +571,11 @@ Scheme
 			// KSF / VELHUD SPEEDOMETER FONT & SIZE
 			"1"
 			{
-				"name"		"Roboto" [!$OSX]
-				"name"		"Roboto" [$OSX]
-				"tall"		"18"
-				"weight"	"900"
+				"name"		"Roboto Black"
+				"tall"		"20"
+				"weight"	"300"
 				"antialias" "1"
-				"additive"	"1"
+				"additive"	"0"
 			}
 		}
 		HudHintText // ksf center panel

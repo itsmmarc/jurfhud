@@ -2,7 +2,7 @@
 // CUSTOMIZATIONS
 //=========================================================
 #base ../customization/speedo.res
-#base ../customization/sidepanel.res
+#base ../customization/timersidepanel.res
 
 //=========================================================
 // MAIN LAYOUT
