@@ -60,6 +60,26 @@
     $goodRange   1
     $badRange   1
 
+    $isGood     0
+    $isBad      0
+    $isNeutral  0
+
+    $isNotGood     0
+    $isNotBad      0
+    $isNotNeutral  0
+
+    $hasBeenNeutral 0
+
+    // neutral buckets
+    $n_bucket_1 0
+    $n_bucket_2 0
+    $n_bucket_3 0
+    $n_bucket_4 0
+    $n_bucket_5 0
+    $n_bucket_6 0
+
+    $prev_speedo 0
+
     //==============================================================
 	
 	Proxies {
@@ -200,51 +220,7 @@
 			lessEqualVar "$v" greaterVar "$speedo"
 			resultVar "$speedo"
 		}
-    //==============================================================
-    // ROUNDING
-    //--------------------------------------------------------------
-        // $speedo = $speedo/10
-        Divide { srcVar1 "$speedo" srcVar2 "$roundAmount" resultVar "$speedo" }
-        // discard decimals of $speedo
-        Int { srcVar1 "$speedo" resultVar "$speedo"}
-        // $speedo = $speedo*10
-		Multiply { srcVar1 "$speedo" srcVar2 "$roundAmount" resultVar "$speedo" }
-		
-    //==============================================================
-    // COLORS
-    //==============================================================
-        Add { srcVar1 "$prev_v" srcVar2 "$goodRange" resultVar "$goodThreshold"}
-        Subtract { srcVar1 "$prev_v" srcVar2 "$badRange" resultVar "$badThreshold"}
-        LessOrEqual {
-            srcVar1         "$v"
-            srcVar2         "$0"
-            resultVar       "$color"
-            greaterVar      "$color"
-            lessEqualVar    "$colorMain"
-        }
-        LessOrEqual {
-            srcVar1         "$v"
-            srcVar2         "$goodThreshold"
-            resultVar       "$color"
-            greaterVar      "$colorGood"
-            lessEqualVar    "$color"
-        }
-        LessOrEqual {
-            srcVar1         "$v"
-            srcVar2         "$badThreshold"
-            resultVar       "$color"
-            greaterVar      "$color"
-            lessEqualVar    "$colorBad"
-        }
-    //==============================================================
-		// prev_x = x, prev_y = y, prev_z = z, prev_t = t, prev_v = v
-		Equals { srcVar1 "$x" resultVar "$prev_x" }
-		Equals { srcVar1 "$y" resultVar "$prev_y" }
-		Equals { srcVar1 "$z" resultVar "$prev_z" }
-		Equals { srcVar1 "$t" resultVar "$prev_t" }
-		Equals { srcVar1 "$v" resultVar "$prev_v" }
-		
-		// value = speedo + 0.1
+        // value = speedo + 0.1
 		Add { srcVar1 "$speedo" srcVar2 "$0.1" resultVar "$value" }
 
         // clamp speed
@@ -255,6 +231,152 @@
             "srcVar1"                                               "$value"
             "resultVar"                                             "$frame"
         }
+    //==============================================================
+    // ROUNDING
+    //--------------------------------------------------------------
+        // $speedo = $speedo/10
+        Divide { srcVar1 "$speedo" srcVar2 "$roundAmount" resultVar "$speedo" }
+        // discard decimals of $speedo
+        Int { srcVar1 "$speedo" resultVar "$speedo" }
+        // $speedo = $speedo*10
+		Multiply { srcVar1 "$speedo" srcVar2 "$roundAmount" resultVar "$speedo" }
+		
+    //==============================================================
+    // COLORS
+    //==============================================================
+        // calculate thresholds for speed gain & loss
+        Add { srcVar1 "$prev_speedo" srcVar2 "$goodRange" resultVar "$goodThreshold" }
+        Subtract { srcVar1 "$prev_speedo" srcVar2 "$badRange" resultVar "$badThreshold" }
+        // shift buckets along once
+        Equals { srcVar1 "$n_bucket_5" resultVar "$n_bucket_6" }
+        Equals { srcVar1 "$n_bucket_4" resultVar "$n_bucket_5" }
+        Equals { srcVar1 "$n_bucket_3" resultVar "$n_bucket_4" }
+        Equals { srcVar1 "$n_bucket_2" resultVar "$n_bucket_3" }
+        Equals { srcVar1 "$n_bucket_1" resultVar "$n_bucket_2" }
+
+        Equals { srcVar1 "$g_bucket_2" resultVar "$g_bucket_3" }
+        Equals { srcVar1 "$g_bucket_1" resultVar "$g_bucket_2" }
+
+        Equals { srcVar1 "$b_bucket_2" resultVar "$b_bucket_3" }
+        Equals { srcVar1 "$b_bucket_1" resultVar "$b_bucket_2" }
+        
+        // if(v<=0){color=colorNeutral}
+        LessOrEqual {
+            srcVar1         "$speedo"
+            srcVar2         "$0"
+            resultVar       "$color"
+            greaterVar      "$color"
+            lessEqualVar    "$colorNeutral"
+        }
+
+        // CONDITIONS
+        // if(v>goodThreshold){isGood=1}
+        LessOrEqual {
+            srcVar1         "$speedo"
+            srcVar2         "$goodThreshold"
+            resultVar       "$isGood"
+            greaterVar      "$1"
+            lessEqualVar    "$0"
+        }
+        LessOrEqual {
+            srcVar1         "$speedo"
+            srcVar2         "$goodThreshold"
+            resultVar       "$isNotGood"
+            greaterVar      "$0"
+            lessEqualVar    "$1"
+        }
+        // if(v<=badThreshold){isBad=1}
+        LessOrEqual {
+            srcVar1         "$speedo"
+            srcVar2         "$badThreshold"
+            resultVar       "$isBad"
+            greaterVar      "$0"
+            lessEqualVar    "$1"
+        }
+        LessOrEqual {
+            srcVar1         "$speedo"
+            srcVar2         "$badThreshold"
+            resultVar       "$isNotBad"
+            greaterVar      "$1"
+            lessEqualVar    "$0"
+        }
+        // if(isNotGood && isNotBad){isNeutral=1}
+        Multiply {
+            srcVar1     "$isNotGood"
+            srcVar2     "$isNotBad"
+            resultVar   "$isNeutral"
+        }
+        LessOrEqual {
+            srcVar1         "$isNeutral"
+            srcVar2         "$0"
+            resultVar       "$isNotNeutral"
+            greaterVar      "$0"
+            lessEqualVar    "$1"
+        }
+
+        // NEUTRAL
+        Equals { srcVar1 "$isNeutral" resultVar "$n_bucket_1"}
+        // if(n_bucket_1 && n_bucket_2 && n_bucket_3 etc...){color=colorNeutral}
+        Multiply {
+            srcVar1     "$n_bucket_1"
+            srcVar2     "$n_bucket_2"
+            resultVar   "$hasBeenNeutral"
+        }
+        Multiply {
+            srcVar1     "$hasBeenNeutral"
+            srcVar2     "$n_bucket_3"
+            resultVar   "$hasBeenNeutral"
+        }
+        Multiply {
+            srcVar1     "$hasBeenNeutral"
+            srcVar2     "$n_bucket_4"
+            resultVar   "$hasBeenNeutral"
+        }
+        Multiply {
+            srcVar1     "$hasBeenNeutral"
+            srcVar2     "$n_bucket_5"
+            resultVar   "$hasBeenNeutral"
+        }
+        Multiply {
+            srcVar1     "$hasBeenNeutral"
+            srcVar2     "$n_bucket_6"
+            resultVar   "$hasBeenNeutral"
+        }
+        LessOrEqual {
+            srcVar1         "$hasBeenNeutral"
+            srcVar2         "$0"
+            resultVar       "$color"
+            greaterVar      "$colorNeutral"
+            lessEqualVar    "$color"
+        }
+
+        // GOOD
+        // if(isGood){color=colorGood}
+        LessOrEqual {
+            srcVar1         "$isGood"
+            srcVar2         "$0"
+            resultVar       "$color"
+            greaterVar      "$colorGood"
+            lessEqualVar    "$color"
+        }
+
+        // BAD
+        // if(isBad){color=colorBad}
+        LessOrEqual {
+            srcVar1         "$isBad"
+            srcVar2         "$0"
+            resultVar       "$color"
+            greaterVar      "$colorBad"
+            lessEqualVar    "$color"
+        }
+    //==============================================================
+		// prev_x = x, prev_y = y, prev_z = z, prev_t = t, prev_v = v
+		Equals { srcVar1 "$x" resultVar "$prev_x" }
+		Equals { srcVar1 "$y" resultVar "$prev_y" }
+		Equals { srcVar1 "$z" resultVar "$prev_z" }
+		Equals { srcVar1 "$t" resultVar "$prev_t" }
+		Equals { srcVar1 "$v" resultVar "$prev_v" }
+        Equals { srcVar1 "$speedo" resultVar "$prev_speedo" }
 
     //==============================================================
     // DIGIT SEPERATION
