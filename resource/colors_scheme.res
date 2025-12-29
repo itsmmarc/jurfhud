@@ -25,6 +25,7 @@ Scheme
         "TColor"    "255 255 255 255"
 
         "Blank"                 "0 0 0 0"
+        "Test"                  "255 0 255 255"
 
         "Black"												"0 0 0 255"
         "IsItTransparentBlack"							    "0 0 0 250"
