@@ -21,7 +21,7 @@
     //==============================================================
     // UPDATE RATE VARIABLES
     //==============================================================
-    $framerate 30
+    $framerate 15
     $fullframe 0
 
     $time 0
@@ -73,7 +73,7 @@
     $goodThreshold  0
     $badThreshold   0
     $goodRange  1
-    $badRange   1
+    $badRange   2
 
     $temp 0
 
@@ -92,12 +92,18 @@
     // neutral buckets
     $g_bucket_1 0
     $g_bucket_2 0
+    $g_bucket_3 0
+    $g_bucket_4 0
 
     $b_bucket_1 0
     $b_bucket_2 0
+    $b_bucket_3 0
+    $b_bucket_4 0
 
     $n_bucket_1 0
     $n_bucket_2 0
+    $n_bucket_3 0
+    $n_bucket_4 0
 
     $prev_frame 0
 
@@ -337,9 +343,38 @@
         LessOrEqual {
             srcVar1         "$update"
             srcVar2         "$0"
+            resultVar       "$g_bucket_4"
+            greaterVar      "$g_bucket_3"
+            lessEqualVar    "$g_bucket_4"
+        }
+        LessOrEqual {
+            srcVar1         "$update"
+            srcVar2         "$0"
+            resultVar       "$g_bucket_3"
+            greaterVar      "$g_bucket_2"
+            lessEqualVar    "$g_bucket_3"
+        }
+        LessOrEqual {
+            srcVar1         "$update"
+            srcVar2         "$0"
             resultVar       "$g_bucket_2"
             greaterVar      "$g_bucket_1"
             lessEqualVar    "$g_bucket_2"
+        }
+
+        LessOrEqual {
+            srcVar1         "$update"
+            srcVar2         "$0"
+            resultVar       "$b_bucket_4"
+            greaterVar      "$b_bucket_3"
+            lessEqualVar    "$b_bucket_4"
+        }
+        LessOrEqual {
+            srcVar1         "$update"
+            srcVar2         "$0"
+            resultVar       "$b_bucket_3"
+            greaterVar      "$b_bucket_2"
+            lessEqualVar    "$b_bucket_3"
         }
         LessOrEqual {
             srcVar1         "$update"
@@ -347,6 +382,21 @@
             resultVar       "$b_bucket_2"
             greaterVar      "$b_bucket_1"
             lessEqualVar    "$b_bucket_2"
+        }
+
+        LessOrEqual {
+            srcVar1         "$update"
+            srcVar2         "$0"
+            resultVar       "$n_bucket_4"
+            greaterVar      "$n_bucket_3"
+            lessEqualVar    "$n_bucket_4"
+        }
+        LessOrEqual {
+            srcVar1         "$update"
+            srcVar2         "$0"
+            resultVar       "$n_bucket_3"
+            greaterVar      "$n_bucket_2"
+            lessEqualVar    "$n_bucket_3"
         }
         LessOrEqual {
             srcVar1         "$update"
@@ -447,6 +497,16 @@
             srcVar2     "$g_bucket_2"
             resultVar   "$hasBeenGood"
         }
+        Multiply {
+            srcVar1     "$g_bucket_3"
+            srcVar2     "$hasBeenGood"
+            resultVar   "$hasBeenGood"
+        }
+        //Multiply {
+        //    srcVar1     "$g_bucket_4"
+        //    srcVar2     "$hasBeenGood"
+        //    resultVar   "$hasBeenGood"
+        //}
         // if(hasBeenGood){color=colorGood}
         LessOrEqual {
             srcVar1         "$hasBeenGood"
@@ -464,6 +524,16 @@
             srcVar2     "$b_bucket_2"
             resultVar   "$hasBeenBad"
         }
+        Multiply {
+            srcVar1     "$b_bucket_3"
+            srcVar2     "$hasBeenBad"
+            resultVar   "$hasBeenBad"
+        }
+        //Multiply {
+        //    srcVar1     "$b_bucket_4"
+        //    srcVar2     "$hasBeenBad"
+        //    resultVar   "$hasBeenBad"
+        //}
         // if(hasBeenBad){color=colorBad}
         LessOrEqual {
             srcVar1         "$hasBeenBad"
@@ -479,6 +549,16 @@
         Multiply {
             srcVar1     "$n_bucket_1"
             srcVar2     "$n_bucket_2"
+            resultVar   "$hasBeenNeutral"
+        }
+        Multiply {
+            srcVar1     "$n_bucket_3"
+            srcVar2     "$hasBeenNeutral"
+            resultVar   "$hasBeenNeutral"
+        }
+        Multiply {
+            srcVar1     "$n_bucket_4"
+            srcVar2     "$hasBeenNeutral"
             resultVar   "$hasBeenNeutral"
         }
         // if(hasBeenNeutral){color=colorNeutral}
