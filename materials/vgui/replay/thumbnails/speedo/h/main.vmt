@@ -4,14 +4,13 @@
 #base ../fonts/roboto/digits.vmt
 
 //==============================================================
-// COLORS
+// CUSTOMIZATION
 //--------------------------------------------------------------
-#base ../../../../../../customization/speedocolors.vmt
+#base ../../../../../../customization/speedoconfig.vmt
 
 //==============================================================
 // CONSTANTS
 //--------------------------------------------------------------
-#base ../../../../../../customization/speedorounding.vmt
 #base ../constants/constantNumbers.vmt
 
 //==============================================================

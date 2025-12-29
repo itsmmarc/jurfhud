@@ -1,0 +1,21 @@
+"UnlitGeneric" {
+    //==============================================================
+    // SPEEDO COLORS
+    // Modify RGB Values
+    //--------------------------------------------------------------
+    "$colorNeutral" "{ 255 255 255 }"   // Color when maintaining speed // def "{ 255 255 255 }"
+    "$colorGood"    "{ 58 138 235 }"    // Color when gaining speed     // def "{ 58 138 235 }"
+    "$colorBad"     "{ 255 71 71 }"     // Color when losing speed      // def "{ 255 71 71 }"
+
+    //==============================================================
+    // SPEEDO FRAMERATE 
+    //--------------------------------------------------------------
+    "$framerate"          "15"  // frames per second    // def "15"
+
+    //==============================================================
+    // SPEEDO ROUNDING - Rounds speedo value down to the nearest 10
+    //  10 = rounding on
+    //  1  = rounding off    
+    //--------------------------------------------------------------
+    "$roundAmount"        "1"   // def "1"
+}
